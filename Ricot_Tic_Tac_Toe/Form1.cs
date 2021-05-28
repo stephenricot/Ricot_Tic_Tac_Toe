@@ -20,11 +20,6 @@ namespace Ricot_Tic_Tac_Toe
             InitializeComponent();
         }
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button14_Click(object sender, EventArgs e)
         {
 
@@ -49,7 +44,12 @@ namespace Ricot_Tic_Tac_Toe
                 b.Text = "O";
 
             turn = !turn;
+            b.Enabled = false;
+        }
 
+        private void click_res(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }

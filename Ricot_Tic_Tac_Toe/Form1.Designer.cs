@@ -148,14 +148,14 @@ namespace Ricot_Tic_Tac_Toe
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.Location = new System.Drawing.Point(13, 283);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(250, 92);
             this.button10.TabIndex = 9;
             this.button10.Text = "Reset";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.click_res);
             // 
             // panel3
             // 
