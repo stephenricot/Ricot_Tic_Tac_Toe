@@ -31,9 +31,7 @@ namespace Ricot_Tic_Tac_Toe
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.C3 = new System.Windows.Forms.Button();
             this.C2 = new System.Windows.Forms.Button();
@@ -45,6 +43,7 @@ namespace Ricot_Tic_Tac_Toe
             this.A2 = new System.Windows.Forms.Button();
             this.A1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -63,48 +62,24 @@ namespace Ricot_Tic_Tac_Toe
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Teal;
-            this.panel4.Controls.Add(this.button12);
+            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.button11);
-            this.panel4.Controls.Add(this.button10);
             this.panel4.Location = new System.Drawing.Point(498, 8);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(276, 384);
             this.panel4.TabIndex = 2;
             // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 39F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(13, 18);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(250, 161);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "New Game";
-            this.button12.UseVisualStyleBackColor = false;
-            // 
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(13, 283);
+            this.button11.Location = new System.Drawing.Point(13, 238);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(250, 92);
             this.button11.TabIndex = 10;
             this.button11.Text = "Exit";
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.click_exit);
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(13, 185);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(250, 92);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "Reset";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.click_res);
             // 
             // panel3
             // 
@@ -226,6 +201,18 @@ namespace Ricot_Tic_Tac_Toe
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(13, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(249, 179);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "New Game";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.click_new);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -249,7 +236,6 @@ namespace Ricot_Tic_Tac_Toe
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button C3;
         private System.Windows.Forms.Button C2;
         private System.Windows.Forms.Button C1;
@@ -259,8 +245,8 @@ namespace Ricot_Tic_Tac_Toe
         private System.Windows.Forms.Button A3;
         private System.Windows.Forms.Button A2;
         private System.Windows.Forms.Button A1;
-        private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button1;
     }
 }
 

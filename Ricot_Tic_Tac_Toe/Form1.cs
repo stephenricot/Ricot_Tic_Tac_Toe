@@ -67,6 +67,19 @@ namespace Ricot_Tic_Tac_Toe
             else if ((C1.Text == C2.Text) && (C2.Text == C3.Text) && (!C1.Enabled))
                 there_is_a_winner = true;
 
+            //vertical checks
+            else if ((A1.Text == B1.Text) && (B1.Text == C1.Text) && (!A1.Enabled))
+                there_is_a_winner = true;
+            else if ((A2.Text == B2.Text) && (B2.Text == C2.Text) && (!A2.Enabled))
+                there_is_a_winner = true;
+            else if ((A3.Text == B3.Text) && (B2.Text == C3.Text) && (!A3.Enabled))
+                there_is_a_winner = true;
+
+            //diagonal checks
+            else if ((A1.Text == B2.Text) && (B2.Text == C3.Text) && (!A1.Enabled))
+                there_is_a_winner = true;
+            else if ((A3.Text == B2.Text) && (B2.Text == C1.Text) && (!C1.Enabled))
+                there_is_a_winner = true;
 
             if (there_is_a_winner)
             {
@@ -93,5 +106,10 @@ namespace Ricot_Tic_Tac_Toe
                 b.Enabled = false;
             }//end foreach
         }
+
+        private void click_new(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
-}
+    }
