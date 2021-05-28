@@ -45,6 +45,9 @@ namespace Ricot_Tic_Tac_Toe
 
             turn = !turn;
             b.Enabled = false;
+            turn_count++;
+
+            checkForWinner();
         }
 
         private void click_res(object sender, EventArgs e)
@@ -69,15 +72,26 @@ namespace Ricot_Tic_Tac_Toe
             {
                 string winner = "";
                 if(turn)
-                    winner = "O";
+                    winner = "Player O";
                 else
-                    winner = "X";
+                    winner = "Player X";
 
                 MessageBox.Show(winner + "Wins!", "Yay!");
             }// end if
-
+            else
+            {
+                if (turn_count == 9)
+                    MessageBox.Show("Draw!", "Nice Try!");
+            }
         }// end checkForWinner
 
-        
+        private void disableButtons()
+        {
+            foreach (Control c in Controls)
+            {
+                Button b = (Button)c;
+                b.Enabled = false;
+            }//end foreach
+        }
     }
 }
