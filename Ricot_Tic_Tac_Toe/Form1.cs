@@ -20,11 +20,6 @@ namespace Ricot_Tic_Tac_Toe
             InitializeComponent();
         }
 
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             
@@ -89,7 +84,7 @@ namespace Ricot_Tic_Tac_Toe
                 else
                     winner = "Player X";
 
-                MessageBox.Show(winner + "Wins!", "Yay!");
+                MessageBox.Show(winner + " " + "Wins!", "Yay!");
             }// end if
             else
             {
